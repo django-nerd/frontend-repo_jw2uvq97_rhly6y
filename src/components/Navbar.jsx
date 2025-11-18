@@ -27,12 +27,15 @@ function Navbar() {
         <div className="h-16 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-cyan-400 shadow-[0_0_40px_rgba(99,102,241,0.45)]" />
-            <span className="text-white font-semibold tracking-tight">4Point2 Technologies</span>
+            <span className="text-white font-semibold tracking-tight">4Point2 Digital Studio</span>
           </a>
 
           <nav className="hidden md:flex items-center">
+            <NavLink href="#home">Home</NavLink>
             <NavLink href="#services">Services</NavLink>
-            <NavLink href="#contact">Get in Touch</NavLink>
+            <NavLink href="#process">How We Work</NavLink>
+            <NavLink href="#portfolio">Portfolio</NavLink>
+            <NavLink href="#contact">Contact</NavLink>
           </nav>
 
           <button
@@ -46,8 +49,11 @@ function Navbar() {
 
         {open && (
           <div className="md:hidden pb-4 flex flex-col">
+            <NavLink href="#home">Home</NavLink>
             <NavLink href="#services">Services</NavLink>
-            <NavLink href="#contact">Get in Touch</NavLink>
+            <NavLink href="#process">How We Work</NavLink>
+            <NavLink href="#portfolio">Portfolio</NavLink>
+            <NavLink href="#contact">Contact</NavLink>
           </div>
         )}
       </div>
